@@ -15,11 +15,11 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build -- --base=$VITE_APP_BASE
         env:
           CI: true
           VITE_APP_TITLE: "Sy Tran Dung CV"
-          VITE_APP_URL: "https://sytranvn.dev/cv"
+          VITE_APP_BASE: "/cv"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
