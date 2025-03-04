@@ -18,8 +18,8 @@ jobs:
         run: npm run build
         env:
           CI: true
-          # VITE_APP_TITLE: "Sy Tran Dung CV"
-          # VITE_APP_URL: "https://sytranvn.dev/cv"
+          VITE_APP_TITLE: "Sy Tran Dung CV"
+          VITE_APP_URL: "https://sytranvn.dev/cv"
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
